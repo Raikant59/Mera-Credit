@@ -47,7 +47,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
 
     try {
       final response = await http
-          .get(Uri.parse('http://10.142.42.232:3000/link'))
+          .get(Uri.parse('http://10.121.94.232:3001/link'))
           .timeout(const Duration(seconds: 5));
 
       if (response.statusCode == 200) {

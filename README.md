@@ -41,9 +41,9 @@ MeraCredit is a lightweight, production-grade Flutter application that loads a d
 dependencies:
   flutter:
     sdk: flutter
-  webview_flutter: ^4.4.2
-  connectivity_plus: ^6.0.3
-  http: ^1.2.1
+  webview_flutter: ^4.13.0
+  connectivity_plus: ^6.1.4
+  http: ^1.4.0
 ```
 
 # 🚀 Getting Started
@@ -62,8 +62,8 @@ dependencies:
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/meracredit-app.git
-cd meracredit-app
+git clone https://github.com/Raikant59/Mera-Credit.git
+cd mera_credit
 ```
 
 ### 2. Install dependencies
@@ -99,7 +99,7 @@ app.get('/link', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`MeraCredit API running at http://localhost:${port}`);
+  console.log(`API running at http://localhost:${PORT}/link`);
 });
 ```
 
@@ -115,7 +115,7 @@ node index.js
 
 ### ✅ Change Splash Background
 
-Update in `lib/splash_screen.dart`:
+Update in `pubspec.yaml`:
 
 ```dart
 Color.fromRGBO(7, 115, 103, 1) // RGBA(7,115,103,255)
@@ -146,7 +146,7 @@ Text('MeraCredit', style: TextStyle(fontFamily: 'Poppins'))
 
 To change app icon:
 
-1. Replace the icon in `assets/icon.png`
+1. Replace the icon in `assets/meracredit_app icon.png`
 2. Run the following command:
 
 ```bash
@@ -219,4 +219,4 @@ Open an issue first to discuss major changes.
 
 ## 👤 Author
 
-Built with ❤️ by [Your Name](https://github.com/Raikant59)
+Built with ❤️ by [Raikant Chaudhary](https://github.com/Raikant59)
