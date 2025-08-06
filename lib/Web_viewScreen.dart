@@ -47,8 +47,8 @@ class _WebViewScreenState extends State<WebViewScreen> {
 
     try {
       final response = await http
-          .get(Uri.parse('http://10.121.94.232:3001/link'))
-          .timeout(const Duration(seconds: 5));
+          .get(Uri.parse('http://10.67.102.232:3001/link'))
+          .timeout(const Duration(seconds: 3));
 
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
@@ -76,7 +76,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
   Widget build(BuildContext context) {
     if (isLoading) {
       return const Scaffold(
-        backgroundColor: Color(0xFF077367),
+        backgroundColor: Colors.white,
         body: Center(child: CircularProgressIndicator()),
       );
     }

@@ -6,7 +6,7 @@ const PORT = 3001;
 app.use(cors());
 
 app.get('/link', (req, res) => {
-  res.json({ url: 'https://meracredit.in' });
+  res.json({ url: 'https://meracredit.in/' });
 });
 
 app.listen(PORT, () => {

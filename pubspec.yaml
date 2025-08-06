@@ -50,7 +50,7 @@ dev_dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/meracredit_app icon.png"
+  image_path: "assets/Mera_credit_LOGO&ICON.png"
 
 
 
@@ -100,14 +100,9 @@ flutter:
 flutter_native_splash:
   android: true
   ios: true
-  color: "#077367"
-  image: assets/MainIcon.png
-  branding: assets/MeraCreditname.png
-  branding_bottom_padding: 100
+  image: assets/Meracredit_SplashIcon.png
+  color: "#ffffff"
 
   android_12:
-    color: "#077367"
-    image: assets/MainIcon.png
-    branding: assets/MeraCreditname.png
-    branding_bottom_padding: 100
-
+    image: assets/Meracredit_SplashIcon.png
+    color: "#ffffff"
