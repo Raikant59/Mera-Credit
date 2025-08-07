@@ -8,28 +8,26 @@ MeraCredit is a lightweight, production-grade Flutter application that loads a d
 
 - ✅ Dynamic WebView loading from REST API  
 - ✅ Custom splash screen with logo & brand colors  
-- ✅ Native splash disabled (only Flutter splash shown)  
-- ✅ Fallback to default URL if API fails  
+- ✅ Native splash disabled (only Flutter splash shown)   
 - ✅ No Internet detection with retry option  
 - ✅ Debug logs for development  
 - ✅ Controller reuse to avoid flicker  
 
 ---
 
-## 📷 Screenshots
+<!-- ## 📷 Screenshots
 
 | Splash Screen | WebView |
 |---------------|---------|
 | ![Splash](screenshots/splash.png) | ![WebView](screenshots/webview.png) |
 
----
+--- -->
 
 ## 🛠️ Tech Stack
 
 - Flutter (Stable)  
 - Dart  
 - WebView (`webview_flutter`)  
-- Node.js for backend API (REST)  
 - Connectivity check (`connectivity_plus`)  
 - Custom fonts, color palette, splash design  
 
@@ -43,7 +41,6 @@ dependencies:
     sdk: flutter
   webview_flutter: ^4.13.0
   connectivity_plus: ^6.1.4
-  http: ^1.4.0
 ```
 
 # 🚀 Getting Started
@@ -52,7 +49,6 @@ dependencies:
 
 - Flutter SDK (v3.19+)
 - Android Studio / Xcode
-- Node.js (for backend)
 - Internet connection
 
 ---
@@ -76,37 +72,6 @@ flutter pub get
 
 ```bash
 flutter run
-```
-
----
-
-## 🌐 REST API Setup (Optional)
-
-To fetch the URL dynamically:
-
-### 📄 Node.js API Code (`index.js`)
-
-```js
-const express = require('express');
-const cors = require('cors');
-const app = express();
-const port = 3000;
-
-app.use(cors());
-
-app.get('/link', (req, res) => {
-  res.json({ url: "https://meracredit.in" });
-});
-
-app.listen(port, () => {
-  console.log(`API running at http://localhost:${PORT}/link`);
-});
-```
-
-### ▶️ Start the server:
-
-```bash
-node index.js
 ```
 
 ---
@@ -192,10 +157,7 @@ flutter run --release
 ```plaintext
 lib/
 ├── main.dart
-├── splash_screen.dart
 ├── webview_screen.dart
-├── utils/
-│   └── network_helper.dart
 assets/
 ├── fonts/
 ├── icon.png
