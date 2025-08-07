@@ -1,6 +1,6 @@
 # MeraCredit - Flutter WebView App
 
-MeraCredit is a lightweight, production-grade Flutter application that loads a dynamic web URL (https://meracredit.in) using WebView. The URL is fetched from a REST API and includes features like error handling, no-internet fallback, retry support, and a modern splash screen.
+MeraCredit is a lightweight, production-grade Flutter application that loads a dynamic web URL (https://meracredit.in) using WebView. Includes features like error handling, no-internet fallback, retry support, and a modern splash screen.
 
 ---
 
@@ -41,6 +41,8 @@ dependencies:
     sdk: flutter
   webview_flutter: ^4.13.0
   connectivity_plus: ^6.1.4
+  webview_flutter_android: ^4.9.0
+  webview_flutter_wkwebview: ^3.23.0
 ```
 
 # 🚀 Getting Started
